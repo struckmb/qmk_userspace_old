@@ -1,0 +1,19 @@
+#include "combos/common.def"
+COMB(ALL_ZZZ,            KC_NO,          KC_NO)
+
+#if defined(QWERTZ_ENABLE) || defined(BONE_ENABLE) || defined(COLEMAK_ENABLE) || defined(MINE_ENABLE) || defined(WORKMAN_ENABLE)
+#include "combos/base.def"
+#endif // QWERTZ_ENABLE // BONE_ENABLE // COLEMAK_ENABLE // MINE_ENABLE // WORKMAN_ENABLE
+COMB(BASE_ZZZ,            KC_NO,          KC_NO)
+
+#ifdef ARTSENIO_ENABLE
+COMB(ARTS_AAA,           KC_NO,          KC_NO)
+#include "combos/artsenio.def"
+COMB(ARTS_ZZZ,           KC_NO,          KC_NO)
+#endif // ARTSENIO_ENABLE
+
+#ifdef ASETNIOP_ENABLE
+COMB(ASET_AAA,           KC_NO,          KC_NO)
+#include "combos/asetniop.def"
+COMB(ASET_ZZZ,           KC_NO,          KC_NO)
+#endif // ASETNIOP_ENABLE
